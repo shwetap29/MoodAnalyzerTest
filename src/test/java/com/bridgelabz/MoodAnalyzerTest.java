@@ -10,6 +10,13 @@ public class MoodAnalyzerTest {
         MoodAnalyzerMain moodAnalyzer = new MoodAnalyzerMain("I am In Sad Mood");
         String mood = moodAnalyzer.analyseMood();
         assertSame("SAD", mood);
+    }
+    //Constructor in message should return Happy
 
+    @Test
+    public void given_AnyMood_Should_Return_HAPPY() {
+        MoodAnalyzerMain moodAnalyser = new MoodAnalyzerMain("I am in Happy Mood");
+        String mood = moodAnalyser.analyseMood();
+        assertSame("HAPPY", mood);
     }
 }
