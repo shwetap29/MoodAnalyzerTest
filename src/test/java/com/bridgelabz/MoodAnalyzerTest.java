@@ -5,10 +5,10 @@ import org.junit.Test;
 
 public class MoodAnalyzerTest {
     @Test
-    public void given_AnyMood_Should_Return_HAPPY() {
+    public void given_SadMood_Should_Return_SAD() {
         MoodAnalyzerMain moodAnalyzer = new MoodAnalyzerMain();
-        String mood = moodAnalyzer.analyseMood("I am In Any Mood");
-        Assert.assertEquals("HAPPY", mood);
+        String mood = moodAnalyzer.analyseMood("I am In A Sad Mood");
+        Assert.assertEquals("SAD", mood);
 
     }
 
